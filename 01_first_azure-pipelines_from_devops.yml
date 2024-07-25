@@ -8,12 +8,11 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-stages:
--stage: Build
- jobs:
- -job: BuildJob
+jobs:
+- job: BuildJob
   steps:
-  -bash: echo "build started"
+  - bash: echo "build started"
+
   
 # -stage: DevDeploy
 #  jobs:
